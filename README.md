@@ -3,6 +3,19 @@ An active attack tool against Wi-Fi networks with internal CMD commands.
 
 This program is created to be a proof of concept that it is possible to write a working Wi-Fi attack tool with Batchfiles since there are countless examples on the internet that claims to be legit hacking tools, working on CMD. While this tool does not claim a 100% success ratio, it still works if the target Wi-Fi has weak password. :)
 
+## Commands
+```txt
+Commands
+
+ - help             : Displays this page
+ - wordlist         : Provide a wordlist file     
+ - scan             : Performs a WI-FI scan       
+ - interface        : Open Interface Management   
+ - attack           : Attacks selected WI-FI      
+ - counter          : Sets the attack counter     
+ - exit             : Close the program
+```
+
 ## Usage
 
 ### Interface initialization
@@ -52,19 +65,6 @@ If not changed, the counter value is 5, and counts down after each query for eac
 ## Result file
 If an attack is successful, the result is automatically written to `result.txt`.
 
-
-## Help screen
-```txt
-Commands
-
- - help             : Displays this page
- - wordlist         : Provide a wordlist file     
- - scan             : Performs a WI-FI scan       
- - interface        : Open Interface Management   
- - attack           : Attacks selected WI-FI      
- - counter          : Sets the attack counter     
- - exit             : Close the program
-```
 
 ## How its works?
 - If you try with your network it will disconnect the network from your device and then try to connect with the passwords from the wordlist if it is connected then it will display success message.
