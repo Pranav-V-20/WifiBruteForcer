@@ -1,12 +1,7 @@
 # WifiBruteForcer
 An active attack tool against Wi-Fi networks with internal CMD commands.
 
-This program is created to be a proof of concept that it is possible
-to write a working Wi-Fi attack tool with Batchfiles since there 
-are countless examples on the internet that claims to be legit
-hacking tools, working on CMD. While this tool does not claim
-a 100% success ratio, it still works if the target Wi-Fi has
-weak password. :)
+This program is created to be a proof of concept that it is possible to write a working Wi-Fi attack tool with Batchfiles since there are countless examples on the internet that claims to be legit hacking tools, working on CMD. While this tool does not claim a 100% success ratio, it still works if the target Wi-Fi has weak password. :)
 
 ## Usage
 
@@ -46,15 +41,13 @@ If not changed, the counter value is 5, and counts down after each query for eac
 > If an authentication or association is detected, this value is increased by 5 to ensure a successful connection.
 
 ## Limitations
-- This program has been tested unsuccessfully on Windows 7 and tested successfully on Windows 10 and 11. Since some commands may differ in terms of output between Windows versions, it is not expected to work on previous versions.
+- If connected to Network, its profile will be deleted.
 
-- ANSI escape sequences used in the terminal were added to the Windows Console in the Windows 10 version 1511, previous versions are not expected to run this program.
+- Low signal strength may cause false negatives.
 
-- There is a strict dependency on the command line utility `netsh`, meaning that it cannot understand "Unicode" characters. Only ASCII characters are supported for network names.
+- This app might not find the correct password if the signal strength is too low.
 
-- Speed is significantly slow due to its nature.
-
-- Cannot attack hidden networks.
+- Remember, this is an online attack. Expect slow attempts.
 
 ## Result file
 If an attack is successful, the result is automatically written to `result.txt`.
@@ -73,3 +66,13 @@ Commands
  - exit             : Close the program
 ```
 
+## How its works?
+If you try with your network it will disconnect the network from your device and then try to connect with the passwords from the wordlist if it is connected then it will display success message.
+
+You can also try with the avaliable network, first you need to use `scan` command then you need to set the target and exploit the network.
+
+Use only for ethical purpose don't use for unethical activities.
+
+## Legal Disclaimer
+
+This tool is intended for ethical use only. Unauthorized access to Wi-Fi networks is illegal and unethical. Use this tool only to recover passwords for networks you own or have explicit permission to access.
