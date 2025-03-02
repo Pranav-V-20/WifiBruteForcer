@@ -67,11 +67,11 @@ Commands
 ```
 
 ## How its works?
-If you try with your network it will disconnect the network from your device and then try to connect with the passwords from the wordlist if it is connected then it will display success message.
+- If you try with your network it will disconnect the network from your device and then try to connect with the passwords from the wordlist if it is connected then it will display success message.
 
-You can also try with the avaliable network, first you need to use `scan` command then you need to set the target and exploit the network.
+- You can also try with the avaliable network, first you need to use `scan` command then you need to set the target and exploit the network.
 
-Use only for ethical purpose don't use for unethical activities.
+- Use only for ethical purpose don't use for unethical activities.
 
 ## Legal Disclaimer
 
